@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework w5</title>
+</head>
+<body>
+    <!-- Tab Links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'regist')">Registrasi</button>
+        <button class="tablinks" onclick="openTab(event, 'listPendaftaran')">List Pendaftaran</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="regist" class="tabcontent">
+        <h2>Registrasi</h2>
+        
+        <form id="myForm" onsubmit="return validateForm(event)">
+            <label for="nama">Nama</label><br>
+            <input type="text" id="nama" placeholder="Agus Kentus" required><br>
+            <label for="umur">Umur</label><br>
+            <input type="text" id="umur" placeholder="25" required><br>
+            <label for="sangu">Sangu</label><br>
+            <input type="text" id="sangu" placeholder="100000 - 1000000" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="listPendaftaran" class="tabcontent">
+        <h2>List Pendaftaran</h2>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Sangu</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h3>Resume</h3>
+        <p> Rata-rata umur adalah <span id="rataUmur"></span> tahun</p>
+        <p> Rata-rata sangu adalah <span id="rataSangu"></span> </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

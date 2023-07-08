@@ -1,0 +1,89 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: coral;
+    
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    ;
+}
+
+.tab button:hover {
+    background-color: rgb(211, 100, 59);
+    color: aliceblue
+}
+
+.tab button.active {
+    background-color: rgb(223, 102, 58);
+    color: aliceblue
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tabcontent h2{
+    text-align: center;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: coral;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input:focus{
+    outline: none;
+    border-color: chocolate;
+    box-shadow: 0 0 5px chocolate;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(211, 100, 59);
+    color: aliceblue;
+}
+table,td,th{
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+th {
+    height: 50px;
+}
+tr{
+    height: 35px;
+
+}
+tr:hover{background-color: coral;}
+
